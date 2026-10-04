@@ -1,0 +1,19 @@
+REJECTED RECORDS
+================
+
+participants.csv: 3 rows read, 0 rejected, 3 accepted
+fitness_sessions.csv: 29 rows read, 0 rejected, 29 accepted
+fitness_sessions_invalid.csv: 11 rows read, 10 rejected, 1 accepted
+
+fitness_sessions_invalid.csv | row 3 | field: heart_rate | 'fast' is not a number
+fitness_sessions_invalid.csv | row 4 | field: participant_id | '001' is not a valid participant_id (expected P followed by three digits)
+fitness_sessions_invalid.csv | row 5 | field: activity_level | missing value
+fitness_sessions_invalid.csv | row 6 | field: signal_quality | 1.4 is outside allowed range 0 to 1
+fitness_sessions_invalid.csv | row 7 | field: session_id | 'FIT-26-102' is not a valid session_id (expected FIT-YYYY-NNN)
+fitness_sessions_invalid.csv | row 8 | field: participant_id | unknown participant 'P999'
+fitness_sessions_invalid.csv | row 9 | field: timestamp | 'two' is not an integer
+fitness_sessions_invalid.csv | row 10 | field: heart_rate | -15.0 is outside allowed range 30 to 220
+fitness_sessions_invalid.csv | row 11 | field: skin_response | -0.5 is outside allowed range 0 to 50
+fitness_sessions_invalid.csv | row 11 | field: temperature | 55.0 is outside allowed range 25 to 42
+fitness_sessions_invalid.csv | row 11 | field: activity_level | 1.3 is outside allowed range 0 to 1
+fitness_sessions_invalid.csv | row 12 | field: row | expected 8 fields but found 7
